@@ -1,6 +1,7 @@
 .DS_Store
-test_output/
-lsq_AxSI/docs/.DS_Store
+
+# Poetry
+poetry.lock
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -9,6 +10,11 @@ __pycache__/
 
 # C extensions
 *.so
+
+# R
+.DS_Store
+.RData
+.Rhistory
 
 # Distribution / packaging
 .Python
@@ -74,6 +80,9 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+
+# pycharm
+.idea/
 
 # PyBuilder
 target/

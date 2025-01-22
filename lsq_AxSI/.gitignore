@@ -1,11 +1,10 @@
-.DS_Store
-test_output/
-lsq_AxSI/docs/.DS_Store
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+
+# pycharm
+.idea/ 
 
 # C extensions
 *.so

@@ -1,0 +1,39 @@
+## Comment out this file before uploading it to ReadTheDocs
+## ========================================================
+#numpy==1.26.4
+#scikit-learn==1.5.2
+#scipy==1.14.1
+#psutil==6.1.1
+
+## for nifti files
+## ===============
+#dipy==1.9.0
+#nibabel==5.3.0
+
+## for least squares functions
+## ===========================
+#ecos==2.0.14
+#cvxpy==1.5.3
+#rpy2==3.5.11
+#gurobipy==12.0.0
+#lsqAxSI # Hila Gast's LSQ function
+
+## for nifti_viewer.py
+## ===================
+#dash==2.18.2
+#plotly==5.24.1
+#pandas==2.2.3
+
+# for tests
+## =========
+# pytests
+
+## R packages (installed automatically in AxSI/check_r.py script)
+#quadprog
+#minpack.lm
+
+#For readthedocs
+# =============
+sphinx
+sphinx_rtd_theme
+myst-parser

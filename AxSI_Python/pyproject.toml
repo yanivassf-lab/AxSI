@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "AxSI"
+version = "0.0.17"
+description = "AxSI for MRI data"
+authors = ["Hila Gast"]
+maintainers = ["Refael Kohen <refael.kohen@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/yanivassf-lab/"
+repository = "https://github.com/yanivassf-lab/AxSI"  # optional
+keywords = []
+packages = [
+    { include = "axsi", from = "src" }, # install in site-packages/axsi/
+    { include = "axsi/cli", from = "src" }, # install in site-packages/axsi/cli/
+    { include = "axsi_tests", from = "." } # install in site-packages/axsi/tests/
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+numpy = "1.26.4"
+scipy = "1.14.1"
+scikit-learn = "1.5.2"
+psutil = "6.1.1"
+nibabel = "5.3.0"
+dipy = "1.9.0"
+lsqAxSI = "*"
+rpy2 = "3.5.11"
+ecos = "2.0.14"
+cvxpy = "1.5.3"
+gurobipy = "12.0.0"
+dash = "2.18.2"
+plotly = "5.24.1"
+pandas = "2.2.3"
+pytest = "^7.0"
+
+[poetry.group.dev.dependencies]
+pytest = "^7.0"
+
+# Include additional non-Python files in your package using include (top-level array)
+include = [
+    "docs/usage.rst",
+    "axsi_tests/**/*.nii",
+    "axsi_tests/**/*.nii.gz",
+    "axsi_tests/**/*.txt",
+    "axsi_tests/**/*.py"
+]
+
+[tool.poetry.scripts]
+axsi-main = "axsi.cli.axsi_main:main"
+axsi-nifti-viewer = "axsi.cli.axsi_nifti_viewer:main"
+axsi-install-r = "axsi.cli.axsi_install_r:main"
+axsi-run-tests = "axsi_tests.test_runner:run_tests"
+
+
+[build-system]
+requires = [
+    "poetry-core",
+    "setuptools",
+    "wheel"
+]
+build-backend = "poetry.core.masonry.api"
+#build-backend = "setuptools.build_meta"
+
+
+# Build the project
+# =================
+# python setup.py build sdist (need to change build-backend = "poetry.core.masonry.api" to build-backend = "setuptools.build_meta")
+# Or
+# poetry build
+

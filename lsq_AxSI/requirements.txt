@@ -1,0 +1,5 @@
+## Comment out this file before uploading it to ReadTheDocs
+#numpy
+#scipy
+#scikit-learn
+

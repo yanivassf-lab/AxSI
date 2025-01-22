@@ -1,0 +1,20 @@
+/* Custom style for sliders */
+.slider-label {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.slider-container {
+    text-align: center;
+    margin-top: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Increase font size of the slider marks */
+.slider {
+    font-size: 40px;
+    width: 100%;
+}

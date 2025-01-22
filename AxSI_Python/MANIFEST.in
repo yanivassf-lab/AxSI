@@ -1,0 +1,4 @@
+recursive-include axsi_tests *.nii
+recursive-include axsi_tests *.nii.gz
+recursive-include axsi_tests *.txt
+recursive-include axsi_tests *.py
